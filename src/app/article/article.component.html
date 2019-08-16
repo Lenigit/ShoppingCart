@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col"></div>
+    <div class="col-10">
+        <div class="row article-row bg-dark">
+            <div class="col-1 text-center article-img"><img src="{{article.img}}" width="100px" class="rounded" /></div>
+            <div class="col-6 text-left article-name">{{article.name}}</div>
+            <div class="col"></div>
+            <div class="col-1 text-right article-price">{{article.price.toFixed(2)}}&nbsp;€</div>
+            <div class="col-1 text-right article-buy"><button class="btn btn-secondary" (click)="add()">Buy</button></div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>

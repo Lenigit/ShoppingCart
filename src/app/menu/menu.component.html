@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar-brand">ShoppingCart Sample</div>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link active" routerLink='/'>Catalog</a>
+        </li>
+        <li class="nav-item active">
+            <a class=" nav-link" routerLink='/cart'>Cart&nbsp;<div class="qt_articles" *ngIf='qt_articles > 0'>({{qt_articles}})</div></a>
+        </li>
+    </ul>
+</nav>

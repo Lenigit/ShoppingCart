@@ -1,0 +1,52 @@
+.article-row {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin:2px 0 0 0;
+    padding:5px;
+}
+
+.article-row button {
+    color:white;
+}
+
+.rounded {
+    border-radius:5px;
+}
+
+.more-less {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-less i {
+    margin: 2px;
+}
+
+.qt_links:hover {
+    cursor: pointer;
+}
+
+.article-price {
+    min-width:70px;
+}
+
+.article-name {
+    min-width:150px;
+}
+
+.article-img {
+    min-width:110px;
+}
+
+.article-ml {
+    min-width:30px;
+}
+
+.remove {
+    min-width: 150px;
+}

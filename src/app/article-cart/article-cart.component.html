@@ -1,0 +1,23 @@
+<div class="row" *ngIf="article_ref.qt > 0">
+    <div class="col"></div>
+    <div class="col-10">
+        <div class="row article-row bg-dark">
+            <div class="col-2 article-img"><img src="{{article_ref.article.img}}" width="100px" class="rounded" /></div>
+            <div class="col-4 text-left article-name">{{article_ref.article.name}}</div>
+            <div class="col-1 text-right article-price"> {{article_ref.qt}}</div>
+            <div class="col-1 text-left">
+                <div class="more-less article-ml">
+                    <a class="qt_links" (click)='add_qt()'><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                    <a class="qt_links" (click)='sub_qt()'><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col text-right article-price">{{article_ref.article.price.toFixed(2)}}&nbsp;€</div>
+            <div class="col text-right article-price">{{(article_ref.article.price*article_ref.qt).toFixed(2)}}&nbsp;€
+            </div>
+            <div class="col text-right remove" (click)="delete()">
+                <button class="btn btn-secondary">Remove&nbsp;<i class="fa fa-times-circle" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
